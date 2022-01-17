@@ -10,7 +10,7 @@ export default function Navbar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" onClick={() => {window.location.href="/"}} style={{cursor: 'pointer'}}>
-            PDM Automotive
+            IMS
           </Typography>
         </Toolbar>
       </AppBar>

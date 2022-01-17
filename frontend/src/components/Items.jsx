@@ -87,10 +87,10 @@ export default function Items() {
         <TextField id="search" label="Search" variant="outlined" value={keyword} onChange={e => handleChange(e, 'keyword')} fullWidth />
         <Button variant="outlined" onClick={e => handleClickSearch(e)} fullWidth>Search</Button>
 
-        <TextField id="priceMin" label="PriceMin" variant="outlined" value={priceRange[0]} onChange={e => handleChange(e, 'priceMin')} fullWidth
+        <TextField id="priceMin" label="Min Price" variant="outlined" value={priceRange[0]} onChange={e => handleChange(e, 'priceMin')} fullWidth
           InputProps={{ startAdornment: (<InputAdornment position="start">$</InputAdornment>)}}
         />
-        <TextField id="priceMax" label="PriceMax" variant="outlined" value={priceRange[1] === '999999' ? '' : priceRange[1]} onChange={e => handleChange(e, 'priceMax')} fullWidth
+        <TextField id="priceMax" label="Max Price" variant="outlined" value={priceRange[1] === '999999' ? '' : priceRange[1]} onChange={e => handleChange(e, 'priceMax')} fullWidth
           InputProps={{ startAdornment: (<InputAdornment position="start">$</InputAdornment>)}}
         />
         <Button variant="outlined" onClick={e => handleClickSearch(e)} fullWidth>Filter</Button>
